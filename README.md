@@ -1,4 +1,4 @@
-# SFSD Project: Gestion des Contacts
+# SFSD Project: Contact Management System
 
 ## Overview
 
@@ -29,10 +29,15 @@ project/
 
 ## Functionalities
 
-1. **Create Contacts File**: Generates a file with a specified number of random contacts.
-2. **Search Contact**: Searches for a contact by ID.
-3. **Insert Contact**: Adds a new contact to the file.
-4. **Logical Deletion**: Marks a contact as deleted without physically removing it.
+- **Create Contacts File**: Generate a file populated with random contact details.
+- **Search Contacts**: Look up specific contacts using various search criteria.
+- **Insert New Contact**: Add new contact entries to the file.
+- **Logical Deletion**: Mark contacts as deleted without physically removing them from the file.
+
+## Data and File Structure
+
+- **Data Structure**: Efficient handling of contact information using structured data types.
+- **File Structure**: Storage and manipulation of contacts through structured file I/O operations.
 
 ## Authors
 
