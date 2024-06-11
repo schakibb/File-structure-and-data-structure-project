@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a simple contact management system implemented in C. It allows users to create a file with random contacts, search for a contact, insert a new contact, and perform a logical deletion of a contact.
+This project is a simple contact management system implemented in C. It allows users to create a file with random contacts, search for a contact, insert a new contact, and perform a logical deletion of a contact. The system utilizes linked lists, pointers, binary files, memory allocation, and other fundamental concepts in C programming.
 
 ## Features
 
@@ -17,7 +17,6 @@ This project is a simple contact management system implemented in C. It allows u
 ```
 project/
 ├── main.c
-├── LOVC.c
 ├── LOVC.h
 └── Contacts.bin
 ```
@@ -34,10 +33,19 @@ project/
 - **Insert New Contact**: Add new contact entries to the file.
 - **Logical Deletion**: Mark contacts as deleted without physically removing them from the file.
 
-## Data and File Structure
+## Implementation Details
 
-- **Data Structure**: Efficient handling of contact information using structured data types.
-- **File Structure**: Storage and manipulation of contacts through structured file I/O operations.
+### Linked List
+
+The project utilizes a linked list data structure to efficiently manage the contacts. Each node in the linked list represents a contact, containing information such as name, phone number, email, etc. Pointers are used to link the nodes together, enabling dynamic memory allocation and manipulation.
+
+### File Handling
+
+Contacts are stored in a binary file (`Contacts.bin`) using structured file I/O operations. This ensures persistent storage of contact information even after the program terminates. The binary file format optimizes read and write operations, enhancing performance and data integrity.
+
+### Memory Allocation
+
+Dynamic memory allocation is employed for creating and managing contact structures within the linked list. This allows for flexible memory usage, enabling the system to adapt to varying numbers of contacts without wasting memory.
 
 ## Authors
 
